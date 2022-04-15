@@ -20,20 +20,25 @@ This is a cupcake order form that sends the data entred to a process php page th
     <h1>Cupcake Fundraiser</h1>
 
     <form method="post" action="process.php">
-    <input name="fname" type="text" placeholder="Please input your name">
-    <label for="checkboxes">Cupcake flavors</label>
+        <fieldset class="form-group">
+            <label for="fname">Name: </label>
+                <input name="fname" type="text" placeholder="Please input your name">
+        </fieldset>
 
-    <div  id="checkboxes" name="checkboxes">
-        <input value="Tiramisu" type="checkbox" name='flavor[]'>Tiramisu
-        <input value="The Grasshopper" type="checkbox" name='flavor[]'>The Grasshopper
-        <input value="Whiskey Maple Bacon" type="checkbox" name='flavor[]'>Whiskey Maple Bacon
-        <input value="Carrot Walnut" type="checkbox" name='flavor[]'>Carrot Walnut
-        <input value="Salted Caramel" type="checkbox" name='flavor[]'>Salted Caramel
-        <input value="Red Velvet" type="checkbox" name='flavor[]'>Red Velvet
-        <input value="Lemon Drop" type="checkbox" name='flavor[]'>Lemon Drop
-    </div>
+        <fieldset class="form-group">
+            <label for="checkboxes">Cupcake flavors</label>
+            <div class="form-check" id="checkboxes" name="checkboxes">
+                <div class="form-check"><label class="form-check-label"><input class="form-check-input" value="Tiramisu" type="checkbox" name='flavor[]'>Tiramisu</label></div>
+                <div class="form-check"><label class="form-check-label"><input class="form-check-input" value="The Grasshopper" type="checkbox" name='flavor[]'>The Grasshopper</label></div>
+                <div class="form-check"><label class="form-check-label"><input class="form-check-input" value="Whiskey Maple Bacon" type="checkbox" name='flavor[]'>Whiskey Maple Bacon</label></div>
+                <div class="form-check"><label class="form-check-label"><input class="form-check-input" value="Carrot Walnut" type="checkbox" name='flavor[]'>Carrot Walnut</label></div>
+                <div class="form-check"><label class="form-check-label"><input class="form-check-input" value="Salted Caramel" type="checkbox" name='flavor[]'>Salted Caramel</label></div>
+                <div class="form-check"><label class="form-check-label"><input class="form-check-input" value="Red Velvet" type="checkbox" name='flavor[]'>Red Velvet</label></div>
+                <div class="form-check"><label class="form-check-label"><input class="form-check-input" value="Lemon Drop" type="checkbox" name='flavor[]'>Lemon Drop</label></div>
+            </div>
+        </fieldset>
         <button type="submit">Order</button>
-</form>
+    </form>
 
 
 
