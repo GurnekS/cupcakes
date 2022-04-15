@@ -1,3 +1,5 @@
+<!--Gurnek and Daniel pair programming 4/7/21
+This is a cupcake order form that sends the data entred to a process php page that shows the order summary-->
 <?php
 ?>
 <!doctype html>
@@ -13,7 +15,7 @@
     <link rel="stylesheet" href="//cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
 
     <title>cupcakes file</title>
-</head> value
+</head>
 <body>
     <h1>Cupcake Fundraiser</h1>
 
